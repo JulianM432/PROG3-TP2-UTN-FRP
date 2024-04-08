@@ -17,6 +17,6 @@ public class BillDiscount extends Modificador {
     //IMPLEMENTAR
     @Override
     public double applyBillDiscount() {
-        return 0;
+        return montoFijo;
     }
 }

@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
+            "mainClass": "Principal",
+            "projectName": "tp02_e15a39d8"
+        },
+        {
             "type": "ahk",
             "request": "launch",
             "name": "AutoHotkey Debugger",

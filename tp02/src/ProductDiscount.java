@@ -11,7 +11,7 @@ public class ProductDiscount extends Modificador{
     }
     @Override
     public double applyProductDiscount(){
-        return 0;
+        return refProducto.getCantidad() * refProducto.getPrecio() * porcentaje;
     }
     @Override
     public double applyBillDiscount(){

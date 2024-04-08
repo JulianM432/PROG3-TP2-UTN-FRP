@@ -1,38 +1,45 @@
 public class ItemProducto {
-    private String Nombre;
-    private float Precio;
-    private float Impuesto;
-    private int Cantidad;
+    private String nombre;
+    private float precio;
+    private float impuesto;
+    private int cantidad;
 
     public ItemProducto(String nombreProducto, float precioProducto, float impuestoProducto, int cantidadProducto) {
-        Nombre = nombreProducto;
-        Precio = precioProducto;
-        Impuesto = impuestoProducto;
-        Cantidad = cantidadProducto;
+        this.nombre = nombreProducto;
+        this.precio = precioProducto;
+        this.impuesto = impuestoProducto;
+        this.cantidad = cantidadProducto;
     }
 
     //IMPLEMENTAR
     public float calcularTotal() {
-        return 0;
+        float total;
+        total = precio * (1 + impuesto) * cantidad;
+        return total;
     }
 
     public String getNombre()
     {
-        return Nombre;
+        return this.nombre;
     }
 
     public float getPrecio()
     {
-        return Precio;
+        return this.precio;
     }
 
     public float getImpuesto()
     {
-        return Impuesto;
+        return this.impuesto;
     }
     
     public int getCantidad()
     {
-        return Cantidad;
+        return this.cantidad;
+    }
+    @Override
+    public String toString(){
+        String txt = String.format("Nombre: %-20s Precio: %.2f\tImpuesto: %.2f | Cantidad: %d | Total (sin descuento): %.2f",nombre,precio,impuesto,cantidad,calcularTotal());
+        return txt;
     }
 }
