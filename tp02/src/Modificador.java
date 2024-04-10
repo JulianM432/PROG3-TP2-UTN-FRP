@@ -2,9 +2,9 @@ public abstract class Modificador {
     protected String nombreDescuento;
     protected float porcentaje;
 
-    public Modificador(String nombreDelDescuento, float porcentajeDescuento) {
+    public Modificador(String nombreDelDescuento, float porcentajeDelDescuento) {
         nombreDescuento = nombreDelDescuento;
-        porcentaje = porcentajeDescuento;
+        porcentaje = porcentajeDelDescuento;
     }
 
     public String getNombreDescuento() {

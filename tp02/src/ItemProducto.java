@@ -4,11 +4,11 @@ public class ItemProducto {
     private float impuesto;
     private int cantidad;
 
-    public ItemProducto(String nombreProducto, float precioProducto, float impuestoProducto, int cantidadProducto) {
-        this.nombre = nombreProducto;
-        this.precio = precioProducto;
-        this.impuesto = impuestoProducto;
-        this.cantidad = cantidadProducto;
+    public ItemProducto(String nombreDelProducto, float precioDelProducto, float impuestoDelProducto, int cantidadDelProducto) {
+        nombre = nombreDelProducto;
+        precio = precioDelProducto;
+        impuesto = impuestoDelProducto;
+        cantidad = cantidadDelProducto;
     }
 
     //IMPLEMENTAR

@@ -1,9 +1,9 @@
 public class ProductDiscount extends Modificador{
     private ItemProducto refProducto;
 
-    public ProductDiscount(String nombreDescuento, float porcentajeDescuento, ItemProducto unaRefProducto)
+    public ProductDiscount(String nombreDelDescuento, float porcentajeDelDescuento, ItemProducto unaRefProducto)
     {
-        super(nombreDescuento, porcentajeDescuento);
+        super(nombreDelDescuento, porcentajeDelDescuento);
         refProducto = unaRefProducto;
     }
     public ItemProducto getRefProducto() {
